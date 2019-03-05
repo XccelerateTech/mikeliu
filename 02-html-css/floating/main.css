@@ -1,0 +1,33 @@
+/* 02-html-css */
+
+body {
+}
+
+.box {
+	width: 100px;
+	height: 100px;
+			
+}
+
+#b1 {
+	background-color: red;
+		float: left;
+
+
+}
+
+#b2 {
+	background-color: black;
+	float: right;
+
+}
+
+
+#b3 {
+	background-color: yellow;
+	clear: both;
+	margin: 0 auto;
+}
+
+
+
