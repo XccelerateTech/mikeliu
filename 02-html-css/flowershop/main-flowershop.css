@@ -46,7 +46,6 @@ body {
     left: 35%;
     margin: 0 auto;
     color: #ffffff;
-
 }
 
 .text-block h1 {
@@ -80,8 +79,7 @@ body {
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
-	padding-top: 40px;
-	padding-bottom: 50px;
+    padding: 0px 0;
     background: #B5FFC8;
 }
 
@@ -89,7 +87,7 @@ body {
     display: flex;
     width: 40%;
     height: 140px;
-    padding: 60px;
+    padding: 50px;
     align-content: center;
     justify-content: center;
 }
@@ -101,4 +99,34 @@ body {
 
 .info-box p {
     width: 50%;
+    padding-left: 30px;
 }
+
+@media screen and (max-width: 900px) {
+    .text-block {
+    top: 50%;
+    left: 30%;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .text-block {
+    top: 50%;
+    left: 25%;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .text-block {
+    top: 50%;
+    left: 15%;
+    }
+
+@media screen and (max-width: 400px) {
+    .text-block {
+    top: 50%;
+    left: 10%;
+    }
+}
+
+
