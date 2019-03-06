@@ -1,0 +1,162 @@
+/* 03-bootstrap/exercise b */
+/* flowershop landing page */
+
+html {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: arial, Helvetica;
+    box-sizing: border-box;
+    display: block;
+}
+
+.nav-logo {
+    /*  border: 1px solid black; */
+}
+
+.hero {
+    background: url('./img/flowershop/flowershop.jpg');
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 90vh;
+    width: 100%;
+}
+
+
+.overlay {
+    background: #000000;
+    opacity: 0.6;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+
+
+.text-block {
+    /*  border: 1px solid black; */
+    position: absolute;
+    text-align: center;
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    color: #ffffff;
+}
+
+.text-block h1 {
+    font-size: 40px;
+}
+
+.text-block .cta {
+    border: 0;
+    font-size: 18px;
+    font-weight: bold;
+    border-radius: 10px;
+    margin-left: 100px;
+    margin-right: 100px;
+    margin-top: -10px;
+    padding: 8px 10px;
+    background-color: #47B039;
+}
+
+.text-block .cta a {
+    text-decoration: none;
+    color: #ffffff;
+}
+
+.text-block .cta:hover {
+    transition: 0.5s;
+    background-color: #5DD45E;
+}
+
+
+/* bootstrap class,added extra style */
+.row {
+    position: relative;
+    background: #B5FFC8;
+    padding: 30px;
+}
+
+.col-md-3 {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    align-content: center;
+    padding: 30px;
+}
+
+.col-md-3 img {
+    width: 50px;
+    height: 50px;
+}
+
+.col-md-3 p {
+    padding: 10px;
+}
+
+
+/* previous css for icons & info section */
+
+/* .icons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 0px 0;
+    background: #B5FFC8;
+}
+
+.col-sm-4 {
+    display: flex;
+    width: 40%;
+    height: 140px;
+    padding: 50px;
+    align-content: center;
+    justify-content: center;
+}
+
+.col-sm-4 img {
+    width: auto;
+    height: auto;
+}
+
+.col-sm-4 p {
+    width: 50%;
+    padding-left: 30px;
+    margin: auto;
+} */
+
+/* @media screen and (max-width: 900px) {
+    .text-block {
+    top: 50%;
+    left: 30%;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .text-block {
+    top: 50%;
+    left: 25%;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .text-block {
+    top: 50%;
+    left: 15%;
+    }
+
+@media screen and (max-width: 400px) {
+    .text-block {
+    top: 50%;
+    left: 10%;
+    }
+}
+ */
