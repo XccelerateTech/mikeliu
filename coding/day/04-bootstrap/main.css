@@ -1,0 +1,295 @@
+/* 04-bootstrap/exercise a */
+
+.col, .col-1, .col-10, .col-11, .col-12, .col-2, .col-3, .col-4, .col-5, .col-6, .col-7, .col-8, .col-9, .col-auto, .col-lg, .col-lg-1, .col-lg-10, .col-lg-11, .col-lg-12, .col-lg-2, .col-lg-3, .col-lg-4, .col-lg-5, .col-lg-6, .col-lg-7, .col-lg-8, .col-lg-9, .col-lg-auto, .col-md, .col-md-1, .col-md-10, .col-md-11, .col-md-12, .col-md-2, .col-md-3, .col-md-4, .col-md-5, .col-md-6, .col-md-7, .col-md-8, .col-md-9, .col-md-auto, .col-sm, .col-sm-1, .col-sm-10, .col-sm-11, .col-sm-12, .col-sm-2, .col-sm-3, .col-sm-4, .col-sm-5, .col-sm-6, .col-sm-7, .col-sm-8, .col-sm-9, .col-sm-auto, .col-xl, .col-xl-1, .col-xl-10, .col-xl-11, .col-xl-12, .col-xl-2, .col-xl-3, .col-xl-4, .col-xl-5, .col-xl-6, .col-xl-7, .col-xl-8, .col-xl-9, .col-xl-auto {
+    padding: 0;
+    margin: 0;
+}
+body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+}
+
+.navbar {
+    border-bottom: 1px solid lightgrey;
+}
+
+/* navbar logo */
+.navbar-light .navbar-brand,
+.navbar-light .navbar-brand:focus,
+.navbar-light .navbar-brand:hover {
+    color: lightgrey;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+/* navbar links */
+.navbar-light .navbar-nav .nav-link,
+.navbar-light .navbar-nav .nav-link:focus,
+.navbar-light .navbar-nav .nav-link:hover {
+    color: lightgrey;
+    font-weight: bold;
+    font-size: 14px;
+    padding: 0px 14px;
+}
+
+header {
+    position: relative;
+    background: center;
+    width: 100%;
+    background: url("http://www.dagusa.com/img/header.jpg");
+    background-size: cover;
+    background-position: center;
+    padding: 6% 0;
+}
+
+.cover-bg {
+    padding: 10%;
+    display: block;
+    text-align: center;
+}
+
+.cover p {
+    padding: 0px 50px;
+}
+
+.jumbo-text {
+    margin-bottom: 2%;
+    font-size: 360%;
+    font-weight: bold;
+    color: #ffffff;
+    text-align: center;
+    padding: 0 5%;
+    line-height: 60px;
+}
+
+
+
+.orange-line {
+    width: 50px;
+    height: 3px;
+    background: #e94832;
+    margin: 20px auto;
+}
+
+.sub-text {
+    text-align: center;
+    margin: auto;
+    width: 90%;
+    font-size: 110%;
+    padding-top: 1%;
+}
+
+.sub-t-co {
+    color: lightgrey;
+}
+
+.btn {
+    font-weight: bold;
+    font-family: 'Open Sans', 'Helvetica Neue', Arial, sans-serif border: 0;
+    border-radius: 250px;
+    text-transform: uppercase;
+    font-family: 'Open Sans', 'Helvetica Neue', Arial, sans-serif;
+    font-weight: 700;
+    background-color: #e7653d;
+    border-color: #e7653d;
+    border-style: none;
+    margin-top: 5%;
+    padding: 1.5%;
+}
+
+/*.button-bu {
+    background-color: #e94832;
+    border-color: #e94832;
+    border-radius: 100px;
+    border-style: none;
+    width: 40%;
+    margin-top: 5%;
+}*/
+
+.btn:hover,
+.btn:active,
+.btn:focus {
+    background-color: #e94832;
+    border-color: #e94832;
+    border-style: none;
+}
+
+
+/*.button-bu:active {
+    background-color: rgb(43, 76, 111);
+    border-color: rgb(43, 76, 111);
+    border-radius: 100px;
+    border-style: none;
+}*/
+
+/*.btn-primary {
+    font-size: 90%;
+}
+
+.btn-primary:hover, .btn-primary:focus {
+    background-color: #e94832;
+    border-color: #e94832;
+}*/
+
+
+/* section b */
+
+.column {
+    padding: 5%;
+}
+
+#about {
+    background-color: #ed604b;
+    padding: 7%
+}
+
+#sec-b {
+    color: white;
+    font-size: 200%;
+    font-weight: normal;
+    line-height: 100%;
+    padding-bottom: 10px;
+}
+
+#b-ol {
+    background-color: white;
+}
+
+#b-p {
+    color: #f0f0f0;
+}
+
+#b-btn {
+    color: black;
+    background-color: white;
+}
+
+/* section b */
+
+#four-icons {
+    padding: 7% 0;
+}
+
+#sec-c {
+    color: black;
+    font-weight: normal;
+    font-size: 200%;
+    padding-bottom: 5px;
+}
+
+/* indo box section */
+
+
+.boxbox {
+    display: flex;
+    align-content: space-around;
+    flex-flow: column wrap;
+    padding: 0 10%;
+
+}
+
+/* icons */
+
+.boxbox i {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 50px;
+    color: #ed604b;
+    padding: 5% 0;
+}
+
+/* info headline */
+.boxbox h3 {
+    color: #333333;
+    font-size: 20px;
+}
+
+/* info p */
+.boxbox p {
+    color: #7f7f7f;
+    width: 70%;
+    margin: auto;
+}
+
+/* img section */
+
+.photo-section {
+    position: relative;
+    width: 100%;
+    margin: auto;
+}
+
+#img-row {
+    padding: 0;
+    margin: 0;
+}
+
+.col-lg3 .col-sm-6 .col-md-3 .text-center .img-sec {
+    padding: 0;
+    margin: 0;
+}
+
+.col-lg3 .col-sm-6 .text-center {
+    position: absolute;
+}
+
+.col-lg3 .col-sm-6 .text-center img {
+    width: 100%;
+}
+
+.img-fluid{
+    position: relative;
+    width: 100%;
+    margin: 0;
+}
+
+.img-overlay:hover {
+    position: absolute;
+    max-width: 100%;
+    margin: auto;
+    background-color: #ed604b;
+
+}
+
+
+.block-1 {
+    color: #ffffff;
+}
+
+.block-1:hover {
+    color: #7f7f7f;
+}
+
+.text-section {
+    background-color: #2a2a2c;
+    padding: 5% 0;
+    margin: 0;
+}
+
+.padding-block {
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+    justify-content: center;
+}
+
+#block-black {
+    font-size: 200%;
+    font-weight: 300;
+}
+
+#b-btn-t {
+    color: #2a2a2c;
+    background-color: #ffffff;
+    margin-top: 0;
+    font-weight: 500;
+}
+
+.phone-no {
+    padding: 1% 0;
+}
+
+.email-logo {
+    width: 100%;
+}
+

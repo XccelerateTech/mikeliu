@@ -1,0 +1,156 @@
+<!-- 04-bootstrap/exercise a -->
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>The Only Bootstrap Page</title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="description" content="Demo project">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- boostrap css -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <!-- boostrap js -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <!-- awesome css icon -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+    <!-- my css -->
+    <link rel="stylesheet" type="text/css" href="main.css">
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light fixed-top">
+        <a class="navbar-brand" href="#">THE ONLY BOOTSTRAP PAGE
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+            <ul class="navbar-nav ml-auto">
+                <li><a class="nav-item nav-link" href="#about">ABOUT</a></li>
+                <li><a class="nav-item nav-link" href="#four-icons">FOUR ICONS</a></li>
+                <li><a class="nav-item nav-link" href="#photo-section">INFO</a></li>
+                <li><a class="nav-item nav-link" href="#">CALL ME</a></li>
+            </ul>
+        </div>
+    </nav>
+    <header>
+        <div class="cover-bg">
+            <h1 class="jumbo-text" id="big-headline">HEY LOOK, IT'S EVERY BOOTSTRAP WEBSITE EVER.</h1>
+            <div class="orange-line">
+            </div>
+            <p class="sub-text sub-t-co">Take a look around at the same fucking bootstrap page you've seen ten million times before! Featuring all the same things as those pages!</p>
+            <div><a href="#about" class="btn btn-primary btn-xl page-scroll">This button makes the page scroll</a>
+            </div>
+        </div>
+    </header>
+    <section class="cover-bg" id="about">
+        <div class="column">
+            <h1 class="jumbo-text" id="sec-b">Want to make an original website yourself?</h1>
+            <div class="orange-line" id="b-ol">
+            </div>
+            <p class="sub-text sub-t-co" id="b-p">Forget that! Who would ever want to put in all of that effort for a website? Just open up your web browser and type "bootstrap template" into your favorite search engine, like Yahoo! or Bing, and you're on your way! There are hundreds of templates to choose from, but go ahead and pick this same exact template from the first result on google, edit a few lines, and you're on your way! No one will notice!</p>
+            <a href="https://www.google.com/" target="-blank" class="btn btn-primary btn-xl page-scroll" id="b-btn">Google That!</a>
+        </div>
+    </section>
+    <section class="cover-bg" id="four-icons">
+        <p class="jumbo-text" id="sec-c">So Creative</p>
+        <div class="orange-line">
+        </div>
+        <div class="info-section">
+            <div class="row">
+                <div class="col-lg3 col-sm-6 col-md-3 text-center">
+                    <div class="boxbox" id="box-1">
+                        <i class="fa fa-globe" aria-hidden="true"></i>
+                        <h3 class="info-box-h">Amazing Template</h3>
+                        <p class="info-box-p">Guaranteed to use the same fucking template that every other bootstrap website uses, downloaded straight from The Web&trade;</p>
+                    </div>
+                </div>
+                <div class="col-lg3 col-sm-6 col-md-3 text-center">
+                    <div class="boxbox" id="box-2">
+                        <i class="fa fa-paper-plane" aria-hidden="true"></i>
+                        <h3 class="info-box-h">Set of Four Icons</h3>
+                        <p class="info-box-p">Look at this cool set of four icons describing different things about us! We use four, because it's the default.</p>
+                    </div>
+                </div>
+                <div class="col-lg3 col-sm-6 col-md-3 text-center">
+                    <div class="boxbox" id="box-3">
+                        <i class="fa fa-thumbs-up" aria-hidden="true"></i>
+                        <h3 class="info-box-h">Lots of effort</h3>
+                        <p class="info-box-p">We even changed some of the icons! We take the extra effort to make our designs truly original.</p>
+                    </div>
+                </div>
+                <div class="col-lg3 col-sm-6 col-md-3 text-center">
+                    <div class="boxbox" id="box-4">
+                        <i class="fa fa-heart" aria-hidden="true"></i>
+                        <h3 class="info-box-h">Made with Love</h3>
+                        <p class="info-box-p">Because nothing says hard work and talent like editing a few lines of text.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="photo-section" id="photo-section">
+        <div class="row" id="img-row">
+            <div class="col-lg3 col-sm-6 col-md-3 text-center img-sec">
+                <img class="img-fluid" src="http://www.dagusa.com/img/portfolio/1.jpg" alt="img 1">
+                <div class="img-overlay">
+                </div>
+                <div class="text-block">
+                    <p class="block-1">ONE THING</p>
+                    <p class="block-2">Look</p>
+                </div>
+            </div>
+            <div class="col-lg3 col-sm-6 col-md-3 text-center img-sec">
+                <img class="img-fluid" src="http://www.dagusa.com/img/portfolio/2.jpg" alt="img 2">
+                <div class="img-overlay">
+                </div>
+                <div class="text-block">
+                    <p class="block-1">TWO THING</p>
+                    <p class="block-2">Look</p>
+                </div>
+            </div>
+            <div class="col-lg3 col-sm-6 col-md-3 text-center img-sec">
+                <img class="img-fluid" src="http://www.dagusa.com/img/portfolio/3.jpg" alt="img 3">
+                <div class="img-overlay">
+                </div>
+                <div class="text-block">
+                    <p class="block-1">THREE THING</p>
+                    <p class="block-2">Look</p>
+                </div>
+            </div>
+            <div class="col-lg3 col-sm-6 col-md-3 text-center img-sec">
+                <img class="img-fluid" src="http://www.dagusa.com/img/portfolio/4.jpg" alt="img 4">
+                <div class="img-overlay">
+                </div>
+                <div class="text-block">
+                    <p class="block-1">FOUR THING</p>
+                    <p class="block-2">Look</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <div class="text-section">
+        <div class="padding-block">
+            <p class="jumbo-text" id="block-black">Seriously, It's This Amazing Template !</p>
+            <a href="#" class="btn btn-primary btn-xl page-scroll" id="b-btn-t">THAT'S AMAZING</a>
+        </div>
+    </div>
+    <section class="cover-bg" id="contact-block">
+        <p class="jumbo-text" id="sec-c">My Contact Information</p>
+        <div class="orange-line">
+        </div>
+        <p class="contact-text">Here's my phone number and email address, because hey that's part of the template and why would you not include that on your webpage? You'd be a fool not to! I can't wait for all the job offers to come pouring in from all the companies wanting my insane website design skills.</p>
+        <p class="contact-text">Honestly this template does look really nice, though.</p>
+        <i class="fa fa-phone fa-3x wow bounceIn"></i>
+        <p class="phone-no">+1-608-317-1888</p>
+     <div class="contact-email">   
+        <i class="far fa-envelope email-logo"></i>
+        <a href="bootstrap@email.com">bootstrap@email.com</a>
+    </div>
+    </section>
+</body>
+
+</html>
