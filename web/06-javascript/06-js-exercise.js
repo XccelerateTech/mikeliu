@@ -122,9 +122,9 @@ console.log(infoList);
 
 let convertNum = (i) => {
 
-let num = i + "";
+    let num = i + "";
 
-return num.split("").reverse().join("")
+    return num.split("").reverse().join("")
 
 
 }
@@ -135,14 +135,120 @@ console.log(convertNum(12345));
 //exercise c
 
 var players = [
-    {name: "Lionel Messi", club: "FC Barcelona"},
-    {name: "Christiano Ronaldo", club: "Real Madrid"},
-    {name: "Luis Suarez", club: "FC Barcelona"},
-    {name: "Gareth Bale", club: "Real Madrid"},
-    {name: "Manuel Neuer", club: "FC Bayern Munchen"}
+    { name: "Lionel Messi", club: "FC Barcelona" },
+    { name: "Christiano Ronaldo", club: "Real Madrid" },
+    { name: "Luis Suarez", club: "FC Barcelona" },
+    { name: "Gareth Bale", club: "Real Madrid" },
+    { name: "Manuel Neuer", club: "FC Bayern Munchen" }
 ]
+//higher-order function
+let filterOut = players.filter(playerName => playerName.club !== "FC Barcelona");
 
-let filterOut = players.filter(players !== "FC Barcelona");
+for (let i = 0; i < filterOut.length; i++) {
+    console.log(filterOut[i].name);
+}
 
-console.log(filterOut);
+//without higher-order function
 
+//   var filterOut = players.filter(function(playerName){
+//       return playerName.club !== "FC Barcelona");
+//   });
+
+//   for (let i=0;i<filterOut.length;i++){
+//       console.log(filterOut[i].name);
+//     }
+
+
+//exercise d
+
+var marks = [
+    { mark: 99 },
+    { mark: 80 },
+    { mark: 60 },
+    { mark: 70 },
+    { mark: 50 },
+    { mark: 67.6 },
+    { mark: 62.4 },
+    { mark: 87.5 },
+    { mark: 55 }
+];
+
+const count = (total, num) => total + num; {
+    const arr = [];
+
+    for (let i = 0; i < marks.length; i++) {
+        let round = Number(marks[i].mark);
+
+        arr.push(round);
+    }
+
+    const totalSum = arr.reduce(count);
+    const answer = (totalSum / marks.length).toFixed();
+    console.log(answer);
+}
+count(marks);
+
+//
+//exercise e
+function uefaEuro2016(teams, score) {
+
+    const national = teams;
+    const num = score;
+
+    if (num[0] === num[1]) {
+        console.log(`At match ${national[0]} - ${national[1]}, teams played draw!`);
+
+    } else if (num[0] > num[1]) {
+        console.log(`At match ${national[0]} - ${national[1]}, ${national[0]} won!`);
+
+    } else if (num[0] < num[1]) {
+        console.log(`At match ${national[0]} - ${national[1]}, ${national[1]} won!`);
+    }
+}
+
+// the function should result in...
+
+// "At match Germany - Ukraine, Germany won!"
+uefaEuro2016(['Germany', 'Ukraine'], [2, 0])
+
+// "At match Belgium - Italy, Italy won!"
+uefaEuro2016(['Belgium', 'Italy'], [0, 2])
+
+// "At match Portugal - Iceland, teams played draw."
+uefaEuro2016(['Portugal', 'Iceland'], [1, 1])
+
+//
+//exercise f
+
+const letter = 'jabcdefghi';
+
+let transform = (num) => {
+
+    let arr = num.split('');
+
+    let reduceLetter = arr.reduce(function (list, index) {
+        list.push(num[index]);
+        return list;
+    }, [])
+
+    reduceLetter.sort();
+
+    let sortLetterArr = reduceLetter.join('');
+
+    console.log(sortLetterArr);
+
+}
+transform('213');
+
+//'213' //abc
+
+
+// bonus //
+//
+//exercise g
+
+//
+//exercise h
+
+//
+//exercise i
