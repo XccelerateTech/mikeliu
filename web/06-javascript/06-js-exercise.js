@@ -227,9 +227,11 @@ let transform = (num) => {
     let arr = num.split('');
 
     let reduceLetter = arr.reduce(function (list, index) {
-        list.push(num[index]);
+        list.push(letter[index]);
         return list;
     }, [])
+
+    // let reduceLetter = arr.reduce(list,index)=>arr.letter(index) {...}
 
     reduceLetter.sort();
 
