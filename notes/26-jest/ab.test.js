@@ -22,3 +22,4 @@ describe('testing the test suite Jest', () => {
         throw new Error();
     });
 });
+
