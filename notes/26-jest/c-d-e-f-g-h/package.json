@@ -1,0 +1,14 @@
+{
+  "name": "c-d-e-exercise",
+  "version": "1.0.0",
+  "description": "",
+  "main": "Song.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "jest": "^24.7.1"
+  }
+}
