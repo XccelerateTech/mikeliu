@@ -8,7 +8,7 @@ const config = {
     port: 5432,
     max: 10, // max number of clients in the pool
     idleTimeoutMillis: 30000, // how long a client is allowed to remain idle before being closed
-}
+};
 
 let user = new pg.Client(config);
 
@@ -23,3 +23,22 @@ user.query('SELECT * FROM citrus WHERE color = \'orange\'', function(err, result
     console.log(results.rows);
     
 });
+
+
+// function getData (name, color) {
+//     let user = new pg.Client('mikeliu://postgres:postgres@localhost:5432/fruits');
+
+//     user.connect();
+
+//     let query = 'SELECT * FROM citrus WHERE name = $1 AND color = $2;';
+
+//     user.query(query, [name, color], function(err, results) {
+//         if (err) {
+//             console.log(err);
+//         }
+        
+//         //property-> row , to show the data table in row
+//         console.log(results.rows);
+        
+//     });
+// };
