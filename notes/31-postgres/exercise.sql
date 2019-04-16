@@ -8,6 +8,9 @@ CREATE TABLE stock(
     price INTEGER
 );
 
+INSERT INTO stock (fruit, description, qty, price) VALUES ('apple', 'from US', 10, 15);
+INSERT INTO stock (fruit, description, qty, price) VALUES ('banana', 'from China', 20, 5);
+INSERT INTO stock (fruit, description, qty, price) VALUES ('orange', 'from UK', 30, 10);
 
 --exercise c
 CREATE TABLE c(
