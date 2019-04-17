@@ -1,0 +1,9 @@
+"BUY","lemon",20
+"BUY","orange",10
+"SELL","orange",10
+"BUY","lime",10
+"SELL","lemon",10
+"SELL","lime",5
+"BUY","grapefruit",40
+"SELL","grapefruit",20
+"SELL","orange",68
