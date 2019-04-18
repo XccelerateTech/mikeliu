@@ -20,11 +20,11 @@ readCsv.on('data', function (row) {
 })
 
 readCsv.on('end', function () {
-    startNow(orderArr);
+    loopData(orderArr);
     // console.log(orderArr);
 })
 
-function startNow(fullData) {
+function loopData(fullData) {
     for (let i = 0; i < fullData.length; i++) {
         matchSqlTable(fullData[i]);
         // console.log(fullData[i]);
@@ -67,24 +67,24 @@ function begin(theArr) {
             resolve(theArr)
         })
     })
-    .then(function(theArr) {
-        if (theArr[0][0] === "BUY") {
-            addOrder(theArr[0][2], theArr[0][1]);
-        }
-        else {
-            lessOrder(theArr[0][2], theArr[0][1]);
-        }
-    })
-    .catch(function(err) {
-        console.log(err);
-        rollback();
-    })
+        .then(function (theArr) {
+            if (theArr[0][0] === "BUY") {
+                addOrder(theArr[0][2], theArr[0][1]);
+            }
+            else {
+                lessOrder(theArr[0][2], theArr[0][1]);
+            }
+        })
+        .catch(function (err) {
+            console.log(err);
+            rollback();
+        })
 };
 
 
 function addOrder(quantity, name) {
     let value = [quantity, name]
-    user.query(buySql, value, function(err) {
+    user.query(buySql, value, function (err) {
         if (err) {
             rollback();
         }
@@ -97,7 +97,7 @@ function addOrder(quantity, name) {
 
 function lessOrder(quantity, name) {
     let value = [quantity, name]
-    user.query(sellSql, value, function(err) {
+    user.query(sellSql, value, function (err) {
         if (err) {
             rollback();
         }
